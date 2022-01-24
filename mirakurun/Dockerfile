@@ -1,0 +1,1 @@
+FROM chinachu/mirakurun:latest
