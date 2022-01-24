@@ -8,5 +8,5 @@ RUN apt-get update && \
     cmake -B build && \
     cd build && \
     make -j$(nproc) && \
-    sudo make install 
+    make install 
     
