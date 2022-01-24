@@ -11,6 +11,7 @@ services:
         volumes:
             - ./mirakurun/conf:/app-config
             - ./mirakurun/data:/app-data
+            - ./mirakurun/opt:/opt
         environment:
             TZ: "Asia/Tokyo"
         devices:
