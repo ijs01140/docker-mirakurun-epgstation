@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git clone https://github.com/l3tnun/docker-mirakurun-epgstation.git
+git clone https://github.com/ijs01140/docker-mirakurun-epgstation.git
 cd docker-mirakurun-epgstation
 cp docker-compose-sample.yml docker-compose.yml
 cp epgstation/config/enc.js.template epgstation/config/enc.js
