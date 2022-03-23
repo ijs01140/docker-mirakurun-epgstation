@@ -1,6 +1,6 @@
 # docker-mirakurun-epgstation
 
-[Mirakurun](https://github.com/Chinachu/Mirakurun) + [EPGStation](https://github.com/l3tnun/EPGStation) の Docker コンテナ
+[Mirakurun](https://github.com/Chinachu/Mirakurun) + [EPGStation](https://github.com/l3tnun/EPGStation) + [web-bml](https://github.com/otya128/web-bml) の Docker コンテナ
 
 ## fork元からの変更点
 以下の通り、私個人向けのカスタマイズを施しているので、使用する際は注意してください
@@ -71,6 +71,10 @@ sudo docker-compose up -d
 
 * ポート番号: 8888
 * ポート番号: 8889
+
+### web-bml
+
+* ポート番号: 23234
 
 ### 各種ファイル保存先
 
