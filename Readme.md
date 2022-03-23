@@ -2,11 +2,18 @@
 
 [Mirakurun](https://github.com/Chinachu/Mirakurun) + [EPGStation](https://github.com/l3tnun/EPGStation) の Docker コンテナ
 
+## fork元からの変更点
+以下の通り、私個人向けのカスタマイズを施しているので、使用する際は注意してください
+- libarib25に[tsukumijima/libaribb25](https://github.com/tsukumijima/libaribb25)を採用
+- データ放送閲覧のために[web-bml](https://github.com/otya128/web-bml)を導入
+- chardevドライバ使用のための変更（別途、docker-compose.ymlに使用するデバイスファイルを適切に追記する必要あり）
+
 ## 前提条件
 
 - Docker, docker-compose の導入が必須
 - ホスト上の pcscd は停止する
 - チューナーのドライバが適切にインストールされていること
+- 必要であれば録画コマンド(recpt1等)も**Mirakurunコンテナ内に**導入すること
 
 ## インストール手順
 
