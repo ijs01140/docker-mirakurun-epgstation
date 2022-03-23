@@ -69,6 +69,21 @@ services:
 #             - /dev/dri:/dev/dri
         restart: always
 
+    web-bml:
+        build:
+            context: "./web-bml"
+            dockerfile: "Dockerfile"
+        environment:
+            MIRAK_URL: http://mirakurun:40772
+            EPG_URL: http://epgstation:8888
+            TZ: "Asia/Tokyo"
+        depends_on:
+            - mirakurun
+            - epgstation
+        ports:
+            - "23234:23234"
+        restart: always
+
 volumes:
     mysql-db:
         driver: local
