@@ -51,8 +51,6 @@ sudo docker-compose down
 ## 更新
 
 ```sh
-# web-bmlを更新
-git submodule update --init --recursive
 # mirakurunとdbを更新
 sudo docker-compose pull
 # epgstationを更新
