@@ -1,6 +1,8 @@
 FROM chinachu/mirakurun:latest
 RUN apt-get update && \
     apt-get -y install git cmake libpcsclite1 libpcsclite-dev pkg-config && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
 \
 #libaribb25 build
     cd /tmp/ && git clone https://github.com/tsukumijima/libaribb25.git && \
