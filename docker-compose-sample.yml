@@ -1,10 +1,8 @@
 version: '3.7'
 services:
     mirakurun:
-        # image: chinachu/mirakurun
-        build:
-            context: "./mirakurun"
-            dockerfile: "Dockerfile"
+        # ARM向けイメージはまだできてないので従来通りビルドしてね
+        image: ijs01140/mirakurun
         cap_add:
             - SYS_ADMIN
             - SYS_NICE
