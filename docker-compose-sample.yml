@@ -67,9 +67,7 @@ services:
         restart: always
 
     web-bml:
-        build:
-            context: "./web-bml"
-            dockerfile: "Dockerfile"
+        image: ijs01140/web-bml
         environment:
             MIRAK_URL: http://mirakurun:40772
             EPG_URL: http://epgstation:8888
