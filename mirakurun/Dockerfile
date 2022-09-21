@@ -10,5 +10,6 @@ RUN apt-get update && apt-get upgrade -y && \
     cmake -B build && \
     cd build && \
     make -j$(nproc) && \
-    make install 
+    make install && \
+    rm -rf /tmp/libaribb25/*
     
