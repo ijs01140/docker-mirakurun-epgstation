@@ -1,5 +1,5 @@
 FROM chinachu/mirakurun:latest
-RUN apt-get update && \
+RUN apt-get update && apt-get upgrade -y && \
     apt-get -y install git cmake libpcsclite1 libpcsclite-dev pkg-config && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
