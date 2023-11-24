@@ -4,8 +4,7 @@
 
 ## fork元からの変更点
 以下の通り、私個人向けのカスタマイズを施しているので、使用する際は注意してください
-- MirakurunのDockerfileを若干変更→[中身](https://github.com/ijs01140/Mirakurun/blob/master/docker/Dockerfile)
-- libarib25に[tsukumijima/libaribb25](https://github.com/tsukumijima/libaribb25)を採用
+- MirakurunのDockerfileを若干変更 ※詳細は[ijs01140/Mirakurun](https://github.com/ijs01140/Mirakurun)を参照
 - データ放送閲覧のために[web-bml](https://github.com/otya128/web-bml)を導入
 
 ## 前提条件
