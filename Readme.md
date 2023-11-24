@@ -10,7 +10,7 @@
 
 ## 前提条件
 
-- Docker, docker-compose の導入が必須
+- Docker, Docker Compose の導入が必須
 - ホスト上の pcscd は停止する
 - チューナーのドライバが適切にインストールされていること
 
@@ -30,7 +30,7 @@ vim docker-compose.yml
 ## 起動
 
 ```sh
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
 ## チャンネルスキャン地上波のみ(取得漏れが出る場合もあるので注意)
@@ -44,18 +44,18 @@ mirakurun の EPG 更新を待ってからブラウザで http://DockerHostIP:88
 ## 停止
 
 ```sh
-sudo docker-compose down
+sudo docker compose down
 ```
 
 ## 更新
 
 ```sh
 # mirakurunとdbを更新
-sudo docker-compose pull
+sudo docker compose pull
 # epgstationを更新
-sudo docker-compose build --pull
+sudo docker compose build --pull
 # 最新のイメージを元に起動
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
 ## 設定
